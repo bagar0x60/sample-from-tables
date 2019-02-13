@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import csv
 import random
 import sys
@@ -27,7 +29,7 @@ if __name__ == '__main__':
             stats_table.extend(zip(row[::2], row[1::2]))
 
     sample = random.sample(stats_table, k)
-    sample.insert(0, ("Nu", "Epsilon"))
+    sample.insert(0, ("ν", "E"))
 
     with open(f'sample_{k}.csv', 'w') as sample_file:
         writer = csv.writer(sample_file)
