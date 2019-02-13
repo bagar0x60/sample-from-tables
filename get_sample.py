@@ -17,6 +17,7 @@ if __name__ == '__main__':
     
     try:
         k = int(sys.argv[1])
+        assert 0 <= k <= 400 
     except:
         usage()    
 
